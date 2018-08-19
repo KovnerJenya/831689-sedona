@@ -66,21 +66,15 @@
             </ul>
           </fieldset>
           <fieldset>
-            <legend>Стоимость в сутки(р):</legend>
-            <div class="range">
-              <ul>
-                <li class="visually-hidden-range-option">
-                  <input type="text" name="range-from" id="range-from">
-                  <label for="range-from">От</label>
-                </li>
-                <li class="visually-hidden-range-option">
-                  <input type="text" name="range-to" id="range-to">
-                  <label for="range-to">До</label>
-                </li>
-              </ul>
-            </div>
-            <input type="range" min="0" max="3000" step="1" value="50">
-            <button class="button" type="submit">Показать</button>
+            <legend>Стоимость в сутки (Р):</legend>
+            <label for="min">От
+              <input id="min" placeholder="0">
+            </label>
+            <label for="max">До
+              <input id="max" placeholder="3000">
+            </label>
+            <input type="range" min="0" max="3000" step="1">
+            <button class="button" type="submit" aria-label="Показать выбранные параметры">Показать</button>
           </fieldset>
         </form>
       </section>
