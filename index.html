@@ -3,7 +3,8 @@
   <head>
     <meta charset="utf-8">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet" >
     <title>HTML Academy: Седона</title>
   </head>
   <body>
@@ -32,15 +33,15 @@
       <div class="promo">
         <img src="img/welcome.png" width="459" height="353" alt="Промо">
       </div>
-      <img src="img/polygon.png" width="1201" height="59" alt="">
-      <h1 class="reasons-title">Седона — небольшой городок в Аризоне,заслуживающий большего!</h1>
-      <p class="reasons-description">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+      <h1>Седона — небольшой городок в Аризоне,<br>заслуживающий большего!</h1>
+      <p class="main-reasons">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+      <h2 class="visually-hidden">Причины</h2>
       <section class="reasons-list">
         <div class="reasons-item">
           <div class="reasons-content">
             <h2 class="reasons-title">Настоящий городок</h2>
             <span class="reasons-number">№1</span>
-            <p class="reasons-text">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+            <p class="reasons-text">Седона — не аттракцион для туристов, <br>там течёт своя жизнь</p>
           </div>
           <div class="reasons-img">
             <img src="img/house-reason-1.jpg" width="800" height="256" alt="Жилье">
@@ -49,17 +50,17 @@
         <div class="reasons-item">
           <ul class="reasons-list">
             <li>
-              <img src="img/icon-1.svg" width="75" height="72" alt="">
+              <img src="img/icon-1-house.svg" width="75" height="72" alt="">
               <h2 class="recommendation-title">Жилье</h2>
               <p class="recommendation-text">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
             </li>
             <li>
-              <img src="img/icon-2.svg" width="74" height="70" alt="">
+              <img src="img/icon-2-gift.svg" width="74" height="70" alt="">
               <h2 class="recommendation-title">Еда</h2>
               <p class="recommendation-text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
             </li>
             <li>
-              <img src="img/icon-3.svg" width="64" height="76" alt="">
+              <img src="img/icon-3-food.svg" width="64" height="76" alt="">
               <h2 class="recommendation-title">Сувениры</h2>
               <p class="recommendation-text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
             </li>
@@ -98,22 +99,28 @@
       <section class="search">
         <h2 class="search-title">Заинтересовались?</h2>
         <p class="search-description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
-        <button class="search-button" type="button">Поиск гостиницы в Седоне</button>
+        <button class="popup-button" type="button">Поиск гостиницы в Седоне</button>
       </section>
     </main>
-    <section class="hotels-search">
+    <section class="hotels-popup">
       <form class="hotels-form" method='post'>
-        <p>Дата заезда:
-          <input type="date" name="arrival" value="2017-04-24">
+        <p>
+          <label for="arrival">Дата заезда:</label>
+          <input type="date" id="arrival" name="arrival" value="2017-04-24">
+          <button class="calendar" type="button">Календарь</button>
         </p>
-        <p>Дата выезда:
-          <input type="date" name="exit" value="2017-06-04">
+        <p>
+          <label for="departure">Дата выезда:</label>
+          <input type="date" id="departure" name="departure" value="2017-06-04">
+          <button class="calendar" type="button">Календарь</button>
         </p>
-        <p>Взрослые:
-          <input type="number" name="adult" value="2">
+        <p>
+          <label for="adult">Взрослые:</label>
+          <input type="number" id="adult" name="adult" value="2">
         </p>
-        <p>Дети:
-          <input type="number" name="children" value="0">
+        <p>
+          <label for="children">Дети:</label>
+          <input type="number" id="children" name="children" value="0">
         </p>
         <button class="button" type="submit">Найти</button>
       </form>
