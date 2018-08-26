@@ -360,6 +360,13 @@ color: #a9a9a9;
   color: #666666;
 }
 
+.html-logo:hover {
+  fill: #81b3d2;
+}
+
+.html-logo:active {
+  fill: #bdbbbc;
+}
 
 
 
