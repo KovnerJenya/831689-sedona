@@ -15,9 +15,9 @@ body {
 }
 
 .main-header{
- width: 100%;
- margin: 0;
- padding: 0;
+  width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 .container {
@@ -170,7 +170,6 @@ a {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-
 }
 
 .reasons-sedona {
@@ -295,7 +294,6 @@ a {
   font-weight: bold;
   font-size: 14px;
   line-height: 18px;
-
 }
 
 .search-button {
@@ -326,7 +324,6 @@ a {
 
 .search-button:focus {
   background-color: #669ec0;
-
 }
 
 .search-button:active {
@@ -369,7 +366,7 @@ a {
 }
 
 .calendar-svg:hover {
-fill: #000000;
+  fill: #000000;
 }
 
 .calendar-svg:active {
@@ -391,7 +388,7 @@ fieldset {
 }
 
 .field-3 {
-padding: 0 0 0 345px;
+  padding: 0 0 0 345px;
 }
 
 .filter-option {
@@ -484,7 +481,7 @@ padding: 0 0 0 345px;
 }
 
 .sorting-type a{
-color: #a9a9a9;
+  color: #a9a9a9;
 }
 
 .sorting-type:hover a{
@@ -496,7 +493,7 @@ color: #a9a9a9;
 }
 
 .sorting {
- display: flex;
+  display: flex;
   background-color: #ffffff;
   min-height: 85px;
   align-items: center;
@@ -526,7 +523,7 @@ color: #a9a9a9;
 }
 
 .arrow:active {
- fill: #81b3d2;
+  fill: #81b3d2;
 }
 
 .hotel {
@@ -636,17 +633,17 @@ color: #a9a9a9;
 
 .rating {
   font-size: 14px;
-    line-height: 21px;
-    width: 110px;
-    /* height: 27px; */
-    /* padding: 5px 15px; */
-    /* text-align: center; */
-    background-color: #f2f2f2;
-    color: #666666;
-    display: flex;
-    justify-content: center;
-    margin: 41px 0 0 0;
-    padding: 3px 0 3px 0;
+  line-height: 21px;
+  width: 110px;
+  /* height: 27px; */
+  /* padding: 5px 15px; */
+  /* text-align: center; */
+  background-color: #f2f2f2;
+  color: #666666;
+  display: flex;
+  justify-content: center;
+  margin: 41px 0 0 0;
+  padding: 3px 0 3px 0;
 }
 
 .main-footer .container {
