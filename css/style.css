@@ -15,6 +15,7 @@ body {
 }
 
 .main-header{
+  position: relative;
   width: 100%;
   margin: 0;
   padding: 0;
@@ -31,7 +32,8 @@ body {
   width: 140px;
   height: 70px;
   top: 0;
-  left: 650px;
+  left: 50%;
+  margin-left: -70px;
 }
 
 a {
@@ -76,11 +78,11 @@ a {
   margin-left: 88px;
 }
 
-.site-navigation:hover a {
+.site-navigation a:hover {
   color: #81b3d2;
 }
 
-.site-navigation:active a {
+.site-navigation a:active {
   color: #a9a9a9;
 }
 
@@ -115,7 +117,7 @@ a {
   text-align: center;
   width: 1200px;
   background-color: #ffffff;
-  padding: 66px 0 75px 0;
+  padding: 66px 0 48px 0;
 }
 
 .description b {
@@ -148,12 +150,15 @@ a {
   list-style: none;
   text-align: center;
   display: flex;
-  flex-direction: row;
   margin: 0;
   padding: 0;
   align-items: baseline;
-  justify-content: space-around;
+  justify-content: space-between;
   background-color: #ffffff;
+}
+
+.additionally li {
+  width: 33.33%;
 }
 
 .reasons-content {
@@ -166,6 +171,10 @@ a {
   padding: 0;
 }
 
+.reasons-img {
+  display: inherit;
+}
+
 .reasons-item {
   display: flex;
   flex-direction: row;
@@ -174,7 +183,7 @@ a {
 
 .reasons-sedona {
   margin: 0;
-  padding: 62px 0 25px 0;
+  padding: 50px 0 25px 0;
 }
 
 .reasons-text {
@@ -189,8 +198,13 @@ a {
   flex-direction: row;
   height: 256px;
   width: 1200px;
-  justify-content: space-around;
+  justify-content: space-between;
   margin: auto;
+  padding: 0;
+}
+
+.reasons-list li{
+  width: 33.33%;
 }
 
 .recommendation-img {
@@ -333,18 +347,28 @@ a {
 
 .social-button {
   background-color: #81b3d2;
-  width: 31px;
-  height: 33px;
-  margin: 6px;
-  padding: 17px 14px 16px 15px;
+  width: 47px;
+  height: 48px;
+  margin: 3px;
   display: flex;
   justify-content: center;
+  align-items: center;
+  fill: #ffffff;
 }
 
 .social-buttons {
   display: flex;
   padding: 0;
   justify-content: center;
+}
+
+.social-button:hover {
+background-color: #669ec0;
+}
+
+.social-button:active {
+  background-color: #5496bd;
+  fill: #88b6d1;
 }
 
 .hashtag {
@@ -354,11 +378,21 @@ a {
   line-height: 26px;
 }
 
+.website {
+  display: flex;
+  align-items: center;
+}
+
+.html-logo {
+  margin: 0 0 0 8px;
+}
+
 .main-footer {
   display: flex;
   justify-content: space-around;
   align-items: center;
   background-color: #ffffff;
+  height: 120px;
 }
 
 .calendar-svg {
@@ -380,7 +414,7 @@ fieldset {
 }
 
 .field-1 {
-  margin: 0 0 0 71px;
+
 }
 
 .field-2 {
@@ -416,9 +450,10 @@ fieldset {
   background-image: url(../img/catalog-main-photo.jpg);
   background-repeat: no-repeat;
   background-size: 100%;
-  background-position: center;
+  background-position: 30% 35%;
   display: flex;
   min-height: 218px;
+  padding: 0 73px 0 73px;
 }
 
 .hotel-item {
@@ -457,7 +492,6 @@ fieldset {
   font-weight: bold;
   font-size: 21px;
   line-height: 26px;
-  margin: 0 0 0 70px;
 }
 
 .sorting-title {
@@ -498,10 +532,11 @@ fieldset {
   min-height: 85px;
   align-items: center;
   border-bottom: 1px solid #e5e5e5;
+  padding: 0 73px 0 73px;
 }
 
 .button-arrow {
-  margin: 0 0 0 458px;
+  margin-left: auto;
 }
 
 .arrow-down {
@@ -531,10 +566,16 @@ fieldset {
   min-height: 150px;
   background-color: #ffffff;
   border-bottom: 1px solid #e5e5e5;
+  padding: 0 73px 0 73px;
 }
 
 .hotel-img {
-  padding: 30px 31px 0 71px;
+  align-self: center;
+  display: inline-flex;
+}
+
+.hotel-content {
+  margin: 0 0 0 30px;
 }
 
 .hotel-price {
@@ -543,8 +584,12 @@ fieldset {
 }
 
 .hotel-rating {
-  display: block;
-  margin: 29px 0 0 522px;
+  margin-left: auto;
+  margin-top: 29px;
+}
+
+.stars {
+  text-align: right;
 }
 
 .hotel-name {
