@@ -309,11 +309,20 @@ a {
   width: 346px;
   padding: 12px 0 10px 13px;
   font: inherit;
-  color: #000000;
+  color: #000;
   text-transform: uppercase;
   background-color: #f2f2f2;
   border: none;
   margin-left: 20px;
+}
+
+.hotels-form input:hover {
+  background-color: #ebebeb;
+}
+
+.hotels-form input:focus {
+  background-color: transparent;
+  border: 1px solid grey;
 }
 
 .change-form input[type="text"] {
@@ -343,22 +352,17 @@ a {
 
 .calendar-1 {
   border: none;
-  background-color: #f2f2f2;
+  background-color: transparent;
   position: absolute;
   top: 11px;
-  right: 5px;
-}
-
-.calendar-2 {
-  border: none;
-  background-color: #f2f2f2;
-  position: absolute;
-  top: 11px;
-  right: 5px;
+  right: 10px;
+  padding: 0;
 }
 
 .plus {
   position: absolute;
+  width: 6px;
+  height: 12px;
   top: 18px;
   left: 202px;
   font-size: 0;
@@ -384,6 +388,8 @@ a {
 
 .minus {
   position: absolute;
+  width: 20px;
+  height: 12px;
   top: 18px;
   left: 119px;
   font-size: 0;
@@ -620,7 +626,9 @@ a {
 }
 
 .range-toggle:hover {
-  background: #1c4f80;
+  position: absolute;
+  top: -9px;
+  border: 9px solid #ffffff;
 }
 
 .range-toggle-min {
@@ -696,29 +704,33 @@ a {
   font-size: 14px;
   line-height: 21px;
   color: #ffffff;
-  margin: 0 0 0 10px;
+  margin: 0;
   position: relative;
+  padding-left: 40px;
 }
 
-.features input[type="checkbox"] + .checkbox-indicator {
+.features::before {
+  content: "";
   position: absolute;
-  top: 0px;
+  top: -4px;
   left: 0px;
   width: 23px;
   height: 23px;
   background-image:url("../img/checkbox-off.svg");
-  background-color: #000000;
 }
 
-.features input[type="checkbox"]:checked + .checkbox-indicator {
+.filter-input {
+  display: none;
+}
+
+.filter-input:checked + .features::before {
   content: "";
   position: absolute;
-  top: 0px;
+  top: -4px;
   left: 0px;
   width: 27px;
   height: 23px;
   background-image:url("../img/checkbox-on.svg");
-  background-color: #000000;
 }
 
 .sorting-results {
@@ -744,19 +756,25 @@ a {
 
 .sorting-type {
   margin: 1px 34px 0 0;
+}
+
+.sorting-link {
+  color: #a9a9a9;
   border-bottom: 1px dotted #81b3d2;
 }
 
-.sorting-type a {
-  color: #a9a9a9;
-}
-
-.sorting-type:hover a {
+.sorting-link:hover {
   color: #81b3d2;
 }
 
-.sorting-type:active a {
+.sorting-link:active {
   color: #000000;
+  border: none;
+}
+
+.active-link {
+  color: #81b3d2;
+  border: none;
 }
 
 .sorting {
@@ -791,6 +809,10 @@ a {
 }
 
 .arrow:active {
+  fill: #81b3d2;
+}
+
+.arrow-active {
   fill: #81b3d2;
 }
 
@@ -946,3 +968,12 @@ a {
 .html-logo:active {
   fill: #bdbbbc;
 }
+
+.link-hotels {
+  color: #766357;
+}
+
+.link-sort {
+  color: red;
+}
+
