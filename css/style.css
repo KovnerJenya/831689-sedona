@@ -4,7 +4,7 @@ body {
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
   line-height: 21px;
-  font-weight: 400;
+  font-weight: 400,700;
   color: #000000;
   text-transform: uppercase;
   background-color: #f2f2f2;
@@ -271,6 +271,7 @@ a {
   height: 86px;
   border: none;
   margin: 27px 0 0;
+  padding: 0;
 }
 
 .popup-button:hover {
@@ -286,7 +287,7 @@ a {
   color: #857871;
 }
 
-.hotels-popup {
+.hotels-map {
   font-weight: bold;
   font-size: 14px;
   line-height: 26px;
@@ -298,10 +299,16 @@ a {
 }
 
 .hotels-form {
+  display: none;
   width: 568px;
   height: 295px;
   background-color: #ffffff;
   padding: 46px 0;
+}
+
+.show-popup {
+  display: block;
+  animation: scale 0.4s;
 }
 
 .hotels-form input[type="text"] {
@@ -314,6 +321,7 @@ a {
   background-color: #f2f2f2;
   border: none;
   margin-left: 20px;
+  border: 1px solid transparent;
 }
 
 .hotels-form input:hover {
@@ -466,6 +474,7 @@ a {
   border: none;
   width: 458px;
   height: 58px;
+  padding: 0;
 }
 
 .input {
@@ -559,6 +568,10 @@ a {
 
 .calendar-svg:active {
   fill: #81b3d2;
+}
+
+.link-hotels {
+  color: #766357;
 }
 
  fieldset {
@@ -667,17 +680,18 @@ a {
 }
 
 .range-toggle:hover {
-  position: absolute;
-  top: -9px;
+  left: -1px;
+  top: -10px;
   border: 9px solid #ffffff;
 }
+
 
 .range-toggle-min {
   left: 0;
 }
 
 .range-toggle-max {
-  left: 80%;
+  left: 255px;
 }
 
 .button-transparent {
@@ -834,23 +848,35 @@ a {
 
 .arrow-down {
   border: none;
-  background-color: #ffffff;
+  background-color: transparent;
 }
 
 .arrow-up {
   border: none;
-  background-color: #ffffff;
+  background-color: transparent;
 }
 
-.arrow {
+.arrow-down {
   fill: #a9a9a9;
 }
 
-.arrow:hover {
+.arrow-down:hover {
   fill: #000000;
 }
 
-.arrow:active {
+.arrow-down:active {
+  fill: #81b3d2;
+}
+
+.arrow-up {
+  fill: #a9a9a9;
+}
+
+.arrow-up:hover {
+  fill: #000000;
+}
+
+.arrow-up:active {
   fill: #81b3d2;
 }
 
@@ -929,13 +955,10 @@ a {
 }
 
 .button-info {
-  font-weight: bold;
+  display: inline-block;
   font-size: 14px;
   line-height: 21px;
-  width: 110px;
-  height: 27px;
-  padding: 5px 15px;
-  text-align: center;
+  padding: 3px 15px;
   background-color: #81b3d2;
   color: #ffffff;
 }
@@ -951,16 +974,13 @@ a {
 }
 
 .button-buy {
-  font-weight: bold;
+  display: inline-block;
   font-size: 14px;
   line-height: 21px;
-  width: 142px;
-  height: 27px;
-  padding: 5px 15px;
-  text-align: center;
+  padding: 3px 15px;
   background-color: #766357;
   color: #ffffff;
-  margin: 6px;
+  margin: 0 0 0 4px;
 }
 
 .button-buy:hover {
@@ -999,11 +1019,7 @@ a {
   fill: #bdbbbc;
 }
 
-.link-hotels {
-  color: #766357;
+@keyframes scale {
+  0% {
+    transform: scaleX(0);
 }
-
-.link-sort {
-  color: red;
-}
-

@@ -115,7 +115,7 @@
             <br>и мы покажем вам лучшие предложения гостиниц в седоне</p>
           <button class="popup-button" type="button">Поиск гостиницы в Седоне</button>
         </div>
-        <div class="hotels-popup">
+        <div class="hotels-map">
           <form class="hotels-form" method='post'>
             <p class="input">
               <label for="arrival">Дата заезда:</label>
@@ -179,5 +179,15 @@
         </p>
       </footer>
     </div>
+    <script>
+      var popupbtn = document.querySelector(".popup-button");
+      var popup = document.querySelector(".hotels-form");
+
+      popupbtn.addEventListener("click",function (evt) {
+        evt.preventDefault();
+        popup.classList.toggle("show-popup")
+      });
+
+    </script>
   </body>
 </html>
