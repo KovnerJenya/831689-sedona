@@ -32,7 +32,4 @@ function init () {
         .add('mouseleave', function (e) {
             e.get('target').options.unset('preset');
         });
-
-
-
 }
