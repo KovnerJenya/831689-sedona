@@ -45,7 +45,7 @@
           <div class="reasons-item">
             <div class="reasons-content">
               <h2 class="reasons-sedona">Настоящий<br>городок</h2>
-              <span class="reasons-number">—№1—</span>
+              <span class="reasons-number">— №1 —</span>
               <p class="reasons-text">Седона — не аттракцион для туристов,
                 <br>там течёт своя жизнь</p>
             </div>
@@ -81,7 +81,7 @@
             </div>
             <div class="reasons-content">
               <h2 class="reasons-sedona">Там есть<br>мост дьявола</h2>
-              <span class="reasons-number">—№2—</span>
+              <span class="reasons-number">— №2 —</span>
               <p class="reasons-text">Да, по нему можно пройти! Если конечно
                 <br>вы осмелитесь</p>
             </div>
@@ -90,19 +90,19 @@
             <ul class="reasons-list">
               <li>
                 <h2 class="reasons-sedona">Небольшая<br>площадь</h2>
-                <span class="reasons-number">—№3—</span>
+                <span class="reasons-number">— №3 —</span>
                 <p class="reasons-text">Все достопримечательности
                   <br>находятся очень близко</p>
               </li>
               <li>
                 <h2 class="reasons-sedona">Красивая<br>дорога</h2>
-                <span class="reasons-number">—№4—</span>
+                <span class="reasons-number">— №4 —</span>
                 <p class="reasons-text">Ехать в Седону из Лас-Вегаса совсем
                   <br>не скучно!</p>
               </li>
               <li>
                 <h2 class="reasons-sedona">Мало<br>туристов</h2>
-                <span class="reasons-number">—№5—</span>
+                <span class="reasons-number">— №5 —</span>
                 <p class="reasons-text">Большинство едет в гранд каньон
                   <br>и толпится там</p>
               </li>
@@ -114,8 +114,6 @@
           <p class="search-description">Укажите предполагаемые даты поездки,
             <br>и мы покажем вам лучшие предложения гостиниц в седоне</p>
           <button class="popup-button" type="button">Поиск гостиницы в Седоне</button>
-        </div>
-        <div class="hotels-map">
           <form class="hotels-form" method='post'>
             <p class="input">
               <label for="arrival">Дата заезда:</label>
@@ -148,6 +146,8 @@
             <button class="search-button" type="button">Найти</button>
           </form>
         </div>
+        <div id="map" class="hotels-map">
+        </div>
       </main>
       <footer class="main-footer index-footer">
         <div class="footer-hashtag">
@@ -179,15 +179,7 @@
         </p>
       </footer>
     </div>
-    <script>
-      var popupbtn = document.querySelector(".popup-button");
-      var popup = document.querySelector(".hotels-form");
-
-      popupbtn.addEventListener("click",function (evt) {
-        evt.preventDefault();
-        popup.classList.toggle("show-popup")
-      });
-
-    </script>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+    <script src="js/srcipt.js"></script>
   </body>
 </html>
