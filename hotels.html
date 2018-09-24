@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
     <title>HTML Academy: Седона</title>
   </head>
   <body>
@@ -15,19 +15,18 @@
         </a>
         <nav class="main-navigation">
           <ul class="site-navigation">
-            <li>
+            <li class="link-info">
               <a href="info.html">Информация</a>
             </li>
-            <li class="content-head">
+            <li class="link-media">
               <a href="content.html">Фото и Видео</a>
             </li>
-            <li>
+            <li class="link-map">
               <a href="map.html">Карта штата</a>
             </li>
-            <li>
-              <a class="link-hotels" href="hotels.html">Гостиницы</a>
+            <li class="link-hotels">
+              <a class="link-hotels-inner" href="hotels.html">Гостиницы</a>
             </li>
-          </ul>
         </nav>
       </header>
       <main>
@@ -39,15 +38,15 @@
               <legend class="title">Инфраструктура:</legend>
               <ul class="hotel-item">
                 <li class="filter-option">
-                  <input class="filter-input" type="checkbox" name="pool" id="pool" checked="checked">
+                  <input class="filter-input visually-hidden" type="checkbox" name="pool" id="pool" checked="checked">
                   <label class="features-infra" for="pool">Бассейн</label>
                 </li>
                 <li class="filter-option">
-                  <input class="filter-input" type="checkbox" name="parking" id="parking">
+                  <input class="filter-input visually-hidden" type="checkbox" name="parking" id="parking">
                   <label class="features-infra" for="parking">Парковка</label>
                 </li>
                 <li class="filter-option">
-                  <input class="filter-input" type="checkbox" name="wi-fi" id="wi-fi">
+                  <input class="filter-input visually-hidden" type="checkbox" name="wi-fi" id="wi-fi">
                   <label class="features-infra" for="wi-fi">Wi-Fi</label>
                 </li>
               </ul>
@@ -56,15 +55,15 @@
               <legend class="title">Тип жилья:</legend>
               <ul class="hotel-item">
                 <li class="filter-option">
-                  <input class="filter-input" type="checkbox" name="hotel" id="hotel" checked="checked">
+                  <input class="filter-input visually-hidden" type="checkbox" name="hotel" id="hotel" checked="checked">
                   <label class="features-type" for="hotel">Гостиница</label>
                 </li>
                 <li class="filter-option">
-                  <input class="filter-input" type="checkbox" name="motel" id="motel" checked="checked">
+                  <input class="filter-input visually-hidden" type="checkbox" name="motel" id="motel" checked="checked">
                   <label class="features-type" for="motel">Мотель</label>
                 </li>
                 <li class="filter-option">
-                  <input class="filter-input" type="checkbox" name="apartments" id="apartments" checked="checked">
+                  <input class="filter-input visually-hidden" type="checkbox" name="apartments" id="apartments" checked="checked">
                   <label class="features-type" for="apartments">Апартаменты</label>
                 </li>
               </ul>
@@ -81,8 +80,8 @@
                 <div class="scale">
                   <div class="bar"></div>
                 </div>
-                <div class="range-toggle range-toggle-min"></div>
-                <div class="range-toggle range-toggle-max"></div>
+                <div class="range-toggle range-toggle-min" aria-label="Ползунок минимальной цены"></div>
+                <div class="range-toggle range-toggle-max" aria-label="Ползунок максимальной цены"></div>
               </div>
               <button class="button-transparent" type="submit">Показать</button>
             </div>
@@ -104,10 +103,10 @@
             </li>
           </ul>
           <div class="button-arrow">
-            <button class="arrow-down" type="button">
+            <button class="arrow-up" type="button" aria-label="Сортировка по возрастанию">
               <svg class="arrow" xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewbox="0 0 11 10"><path d="M5.5 0L0 10h11z"/></svg>
             </button>
-            <button class="arrow-up" type="button">
+            <button class="arrow-down" type="button" aria-label="Сортировка по убыванию">
               <svg class="arrow arrow-active" xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewbox="0 0 11 10"><path d="M5.5 10L0 0h11"/></svg>
             </button>
           </div>
