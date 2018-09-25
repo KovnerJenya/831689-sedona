@@ -1,8 +1,8 @@
 
       var popupbtn = document.querySelector(".popup-button");
       var popup = document.querySelector(".hotels-form");
-      var input1 = popup.querySelector("#arrival");
-      var input2 = popup.querySelector("#departure");
+      var arrival = popup.querySelector("#arrival");
+      var departure = popup.querySelector("#departure");
       var submitbtn = popup.querySelector(".search-button");
 
       popup.classList.remove("show-popup");
@@ -14,7 +14,7 @@
       });
 
       submitbtn.addEventListener("click", function (evt) {
-        if (!input1.value || !input2.value) {
+        if (!arrival.value || !departure.value) {
           evt.preventDefault();
           popup.classList.remove("modal-error");
           popup.offsetWidth = popup.offsetWidth;
