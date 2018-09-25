@@ -1,3 +1,4 @@
+
 body {
   margin: 0;
   padding: 0;
@@ -182,7 +183,8 @@ a {
 }
 
 .additionally {
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   width: 100%;
   list-style: none;
   text-align: center;
@@ -230,7 +232,8 @@ a {
 }
 
 .reasons-item-list {
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -306,7 +309,8 @@ a {
 }
 
 .search {
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   width: 1200px;
   background-color: #ffffff;
   text-align: center;
@@ -583,10 +587,11 @@ a {
   color: #88b6d1;
 }
 
-@keyframes shake {
+@-webkit-keyframes shake {
   0%,
   100% {
-    transform: translateX(0);
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
   }
 
   10%,
@@ -594,19 +599,47 @@ a {
   50%,
   70%,
   90% {
-    transform: translateX(-10px);
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
   }
 
   20%,
   40%,
   60%,
   80% {
-    transform: translateX(10px);
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
   }
 }
 
 .modal-error {
-  animation: shake 0.5s;
+  -webkit-animation: shake 0.5s;
+          animation: shake 0.5s;
 }
 
 .social-button {
@@ -627,7 +660,8 @@ a {
 }
 
 .social-buttons {
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   width: 170px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -956,11 +990,11 @@ a {
 }
 
 .filter-input:focus + .features-type {
-  outline: 5px auto #fff;
+  outline: 1px dotted #fff;
 }
 
 .filter-input:focus + .features-infra {
-  outline: 5px auto #fff;
+  outline: 1px dotted #fff;
 }
 
 .sorting-results {
@@ -972,7 +1006,7 @@ a {
 .sorting-title {
   font-size: 12px;
   line-height: 18px;
-  margin: 0 0 0 49px;
+  margin: 0 0 0 46px;
 }
 
 .sorting-list {
@@ -1010,17 +1044,17 @@ a {
 }
 
 .sorting {
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   background-color: #ffffff;
-  min-height: 85px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   border-bottom: 1px solid #e5e5e5;
-  padding: 0 73px;
+  padding: 31px 73px 29px 73px;
 }
 
 .button-arrow {
@@ -1221,6 +1255,5 @@ a {
 .html-logo:active {
   fill: #bdbbbc;
 }
-
 
 
